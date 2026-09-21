@@ -1,5 +1,4 @@
-"use strict";
-class Produto {
+export class Produto {
     constructor(nome, descricao, preco, imagem) {
         this.nome = nome;
         this.descricao = descricao;
@@ -19,9 +18,4 @@ class Produto {
     </div>
   `;
     }
-}
-const macarronada = new Produto("Macarronada", "Macarronada com molho de tomate e queijo", 24.90, "macarronada.jpg");
-const listaProdutos = document.getElementById("lista-produtos");
-if (listaProdutos) {
-    listaProdutos.innerHTML = macarronada.gerarHTML();
 }
