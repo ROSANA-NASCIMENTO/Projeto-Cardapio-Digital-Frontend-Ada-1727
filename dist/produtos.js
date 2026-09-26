@@ -4,6 +4,7 @@ export class Produto {
         this.descricao = descricao;
         this.preco = preco;
         this.imagem = imagem;
+        this.id = Produto.proximoId++;
     }
     gerarHTML() {
         return `
@@ -11,11 +12,17 @@ export class Produto {
       <img src="img/${this.imagem}" alt="${this.nome}">
       <h3>${this.nome}</h3>
       <p>${this.descricao}</p>
-      <p>${this.preco.toLocaleString("pt-BR", {
+      <p>${this.calcularPrecoFinal().toLocaleString("pt-BR", {
             style: "currency",
             currency: "BRL"
         })}</p>
+
+    <button class="adicionar-produto" data-id="${this.id}">
+    Adicionar à venda
+    </button>  
+    
     </div>
   `;
     }
 }
+Produto.proximoId = 1;
