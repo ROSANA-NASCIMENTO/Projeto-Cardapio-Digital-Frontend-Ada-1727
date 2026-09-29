@@ -13,15 +13,17 @@ const SanduícheNatural = new Lanche("Sanduíche Natural", "Sanduíche com peito
 const refrigerante = new Bebida("Refrigerante", "Refrigerante gelado de 350ml", 5.90, "refrigerante.jpg");
 const sucoDeLaranja = new Bebida("Suco de Laranja", "Suco de laranja natural de 350ml", 8.90, "suco-de-laranja.jpg");
 const aguaMineral = new Bebida("Água Mineral", "Água mineral sem gás de 500ml", 4.50, "agua-mineral.jpg");
-cardapio.adicionarProduto(macarronada);
-cardapio.adicionarProduto(lasanha);
-cardapio.adicionarProduto(strogonoffDeFrango);
-cardapio.adicionarProduto(batataFrita);
-cardapio.adicionarProduto(XBurguer);
-cardapio.adicionarProduto(SanduícheNatural);
-cardapio.adicionarProduto(refrigerante);
-cardapio.adicionarProduto(sucoDeLaranja);
-cardapio.adicionarProduto(aguaMineral);
+if (cardapio.produtos.length === 0) {
+    cardapio.adicionarProduto(macarronada);
+    cardapio.adicionarProduto(lasanha);
+    cardapio.adicionarProduto(strogonoffDeFrango);
+    cardapio.adicionarProduto(batataFrita);
+    cardapio.adicionarProduto(XBurguer);
+    cardapio.adicionarProduto(SanduícheNatural);
+    cardapio.adicionarProduto(refrigerante);
+    cardapio.adicionarProduto(sucoDeLaranja);
+    cardapio.adicionarProduto(aguaMineral);
+}
 cardapio.renderizar();
 console.log(cardapio.produtos);
 let venda1 = new Venda();

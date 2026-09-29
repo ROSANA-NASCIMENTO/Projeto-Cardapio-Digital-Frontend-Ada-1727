@@ -1,3 +1,23 @@
+
+/*CABEÇALHO*/
+.cabecalho {
+    background-color: #21864a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.cabecalho p {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
 /* ORGANIZAÇÃO DO CARDÁPIO */
 
 #lista-produtos {

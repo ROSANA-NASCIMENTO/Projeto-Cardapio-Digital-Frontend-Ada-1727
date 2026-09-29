@@ -65,6 +65,7 @@ const strogonoffDeFrango = new Prato(
  "agua-mineral.jpg"
 );
 
+if (cardapio.produtos.length===0) {
 
  cardapio.adicionarProduto(macarronada);
  cardapio.adicionarProduto(lasanha);
@@ -78,7 +79,7 @@ const strogonoffDeFrango = new Prato(
  cardapio.adicionarProduto(refrigerante);
  cardapio.adicionarProduto(sucoDeLaranja);
  cardapio.adicionarProduto(aguaMineral);
-
+}
  cardapio.renderizar();
  console.log(cardapio.produtos);
 
