@@ -3,6 +3,14 @@ import { Prato } from "./prato.js";
 import { Lanche } from "./lanche.js";
 import { Bebida } from "./bebida.js";
 
+
+// exemplo polimorfismo
+//const produtos: Produto[] = [
+//new Bebida("refrigerante", "bebida",10, "imagem.jpg" ),
+//new Bebida("refrigerante", "bebida",10, "imagem.jpg" )
+
+
+
 export class Cardapio {
     produtos: Produto[] = [];
 

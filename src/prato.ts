@@ -2,7 +2,7 @@ import { Produto } from "./produtos.js";
 
 export class Prato extends Produto {
 
-  calcularPrecoFinal(): number {
+  override calcularPrecoFinal(): number {
     return this.preco * 1.20;
   }
 }
